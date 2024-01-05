@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0F172A;
 }
 
 @media (min-width: 1024px) {
@@ -22,7 +23,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
   }
   
   .main-content{
@@ -92,6 +93,7 @@ body {
   }
 }
 
+/* Nav menu */
 .btn-menu{
   cursor:pointer;
 	position:relative;
@@ -184,11 +186,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* .hover\:text-teal-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212/var(--tw-text-opacity));
-} */
-
 .exp-description{
   font-size: 0.875rem;
   --tw-text-opacity: 1;
@@ -203,7 +200,6 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
 }
-
 
 header a{
   text-decoration: none;
