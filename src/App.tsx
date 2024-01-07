@@ -3,12 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import IconButton from "@mui/material/IconButton";
-// import SunIcon from "@mui/icons-material/Brightness7"; // Sun icon
-// import MoonIcon from "@mui/icons-material/Brightness2"; // Moon icon
-
 import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh"; // Sun icon
 import NightsStayIcon from "@mui/icons-material/NightsStay"; // Moon icon
-
 import "./App.css";
 import Header from "./Header";
 import About from "./About";
@@ -16,6 +12,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Experience from "./Experience";
+import Description from "./Description";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -28,20 +25,45 @@ const App: React.FC = () => {
             // Palette for dark mode
             primary: { main: "#90caf9" },
             secondary: { main: "#f48fb1" },
-            background: { default: "#121212", paper: "#424242" },
+            background: { default: "#0F172A", paper: "#424242" },
             text: { primary: "#ffffff", secondary: "#aaaaaa" },
           }
         : {
             // Palette for light mode
             primary: { main: "#1976d2" },
             secondary: { main: "#dc004e" },
-            background: { default: "#ffffff", paper: "#f5f5f5" },
+            background: { default: "#e4e5f1", paper: "#f5f5f5" },
             text: { primary: "#000000", secondary: "#555555" },
           }),
     },
   });
 
-  const theme = createTheme(getDesignTokens(darkMode ? "dark" : "light"));
+  const theme = createTheme(getDesignTokens(darkMode ? "dark" : "light"), {
+    components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          a: {
+            color: darkMode ? "#C5D1EC" : "#0F172A", // Use your theme link colors here
+            textDecoration: "none", // Optional: remove underline from links
+            "&:hover": {
+              // textDecoration: "underline", // Optional: underline on hover
+            },
+          },
+          p: {
+            color: darkMode ? "#C5D1EC" : "#0F172A",
+          },
+          ".btn-menu": {
+            "&:after": {
+              color: darkMode ? "#C5D1EC" : "#0F172A",
+            },
+            "&:before": {
+              color: darkMode ? "#C5D1EC" : "#0F172A",
+            }, //check why not working
+          },
+        },
+      },
+    },
+  });
 
   const toggleDarkTheme = () => {
     setDarkMode(!darkMode);
@@ -65,11 +87,9 @@ const App: React.FC = () => {
           <Contact />
         </div>
         <div className="col-6 main-content">
-          {/* Long description, Experience, Projects, etc. */}
-          {/* <section>
-          <h2>About</h2>
-          <p>Long description...</p>
-        </section> */}
+          <section>
+            <Description />
+          </section>
           <section>
             <Experience />
           </section>
