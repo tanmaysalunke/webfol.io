@@ -59,6 +59,11 @@ body {
   .contact-icons {
     margin: 0;
   }
+
+  #description{
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Nav menu */
