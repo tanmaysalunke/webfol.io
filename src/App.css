@@ -25,10 +25,6 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-
-  .main-content {
-    padding-top: 6rem;
-  }
 }
 @media (max-width: 1024px) {
   .layout {
@@ -230,23 +226,9 @@ header ul {
   }
 }
 
-/* Floating CV Icon */
-.floating-icon {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 100;
-  border-radius: 50%;
-  background-color: white;
-  border: 4px solid black;
-  height: 40px;
-  width: 40px;
+/* Landing part right side */
+#description{
+  height:100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.FAB-icon {
-  height: 30px;
-  width: 30px;
 }

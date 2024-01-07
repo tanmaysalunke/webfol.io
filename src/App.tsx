@@ -42,6 +42,9 @@ const App: React.FC = () => {
     components: {
       MuiCssBaseline: {
         styleOverrides: {
+          body: {
+            transition: "background-color 1s, color 1s",
+          },
           a: {
             color: darkMode ? "#C5D1EC" : "#0F172A", // Use your theme link colors here
             textDecoration: "none", // Optional: remove underline from links
@@ -53,12 +56,9 @@ const App: React.FC = () => {
             color: darkMode ? "#C5D1EC" : "#0F172A",
           },
           ".btn-menu": {
-            "&:after": {
-              color: darkMode ? "#C5D1EC" : "#0F172A",
+            "&:after, &:before": {
+              borderColor: "inherit",
             },
-            "&:before": {
-              color: darkMode ? "#C5D1EC" : "#0F172A",
-            }, //check why not working
           },
         },
       },

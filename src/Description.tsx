@@ -2,7 +2,7 @@ import React from "react";
 
 const Description = () => {
   return (
-    <section id="skills">
+    <section id="description">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         vulputate arcu risus, nec varius erat gravida aliquet. Vivamus viverra
