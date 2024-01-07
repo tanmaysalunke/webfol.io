@@ -25,6 +25,13 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+
+  /* Landing part right side */
+  #description{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  }
 }
 @media (max-width: 1024px) {
   .layout {
@@ -61,6 +68,7 @@ body {
   }
 
   #description{
+    height: auto;
     display: flex;
     align-items: center;
   }
@@ -229,11 +237,4 @@ header ul {
     background-color: #94a3b8;
     color: #0f172a;
   }
-}
-
-/* Landing part right side */
-#description{
-  height:100vh;
-  display: flex;
-  align-items: center;
 }
