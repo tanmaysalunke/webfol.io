@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={"./email.svg"} alt="Email Icon" />
+          <img src={"./Email.svg"} alt="Email Icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/tanmay-kishor-salunke-8552a216b/"
