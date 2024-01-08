@@ -115,6 +115,20 @@ body {
     }
   }
 }
+/* .btn-menu2 {
+  --c:linear-gradient(#000 0 0);
+  
+  padding-bottom: .15em;
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+}
+.btn-menu2:hover {
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
+} */
 
 .section-header {
   text-transform: uppercase;

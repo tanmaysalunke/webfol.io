@@ -32,7 +32,7 @@ const App: React.FC = () => {
             // Palette for light mode
             primary: { main: "#1976d2" },
             secondary: { main: "#dc004e" },
-            background: { default: "#e4e5f1", paper: "#f5f5f5" },
+            background: { default: "#C5D1EC", paper: "#f5f5f5" },
             text: { primary: "#000000", secondary: "#555555" },
           }),
     },
