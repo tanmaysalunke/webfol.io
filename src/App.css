@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: linear-gradient(315deg, rgba(15,23,42,1) 75%, rgba(17,32,68,1) 100%); */
+  /* background-color :#001523; */
 }
 
 @media (min-width: 1024px) {
@@ -35,6 +35,12 @@ body {
   display: flex;
   align-items: center;
   }
+
+  #skills .skill-tags{
+    padding: 1rem;
+  }
+
+  
 }
 @media (max-width: 1024px) {
   .layout {
@@ -244,14 +250,12 @@ header ul {
 }
 
 .skill-tag {
-  border: 1px solid #94a3b8;
-  color: #94a3b8;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 0.8em;
-  &:hover {
-    transition: all 0.3s;
-    background-color: #94a3b8;
-    color: #0f172a;
-  }
 }
+
+.experience .skill-tags{
+  padding: 0.25rem 0 0.25rem 0;
+}
+

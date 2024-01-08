@@ -44,7 +44,7 @@ const App: React.FC = () => {
         styleOverrides: {
           body: {
             background: darkMode
-              ? "linear-gradient(315deg, rgba(15,23,42,1) 75%, rgba(17,32,68,1) 100%)"
+              ? "linear-gradient(315deg, #00132d 75%, #001e45 100%)"
               : "#C5D1EC",
             transition: "background-color 1s, color 1s",
           },
@@ -62,6 +62,17 @@ const App: React.FC = () => {
           },
           svg: {
             fill: darkMode ? "#C5D1EC" : "#0F172A",
+          },
+          ".skill-tag": {
+            color: darkMode ? "#C5D1EC" : "#0F172A",
+            border: darkMode ? "1px solid #C5D1EC" : "1px solid #0F172A",
+
+            "&:hover": {
+              color: darkMode ? "#0F172A" : "#C5D1EC",
+              border: darkMode ? "1px solid #C5D1EC" : "1px solid #0F172A",
+              background: darkMode ? "#C5D1EC" : "#0F172A",
+              transition: "0.3s all",
+            },
           },
         },
       },
