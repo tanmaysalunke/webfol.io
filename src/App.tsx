@@ -43,6 +43,9 @@ const App: React.FC = () => {
       MuiCssBaseline: {
         styleOverrides: {
           body: {
+            background: darkMode
+              ? "linear-gradient(315deg, rgba(15,23,42,1) 75%, rgba(17,32,68,1) 100%)"
+              : "#C5D1EC",
             transition: "background-color 1s, color 1s",
           },
           a: {
