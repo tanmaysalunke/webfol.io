@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import "./Carousel.css";
+import React from "react";
 
 const Projects: React.FC = () => {
   const projList = [

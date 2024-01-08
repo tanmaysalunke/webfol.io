@@ -68,13 +68,17 @@ const App: React.FC = () => {
   const toggleDarkTheme = () => {
     setDarkMode(!darkMode);
   };
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <IconButton
         onClick={toggleDarkTheme}
-        style={{ position: "absolute", top: "10px", left: "10px" }}
+        style={{
+          position: "absolute",
+          top: "10px",
+          left: "10px",
+          transition: "1s all",
+        }}
       >
         {darkMode ? <BrightnessHighIcon /> : <NightsStayIcon />}
       </IconButton>
@@ -90,13 +94,13 @@ const App: React.FC = () => {
           <section>
             <Description />
           </section>
-          <section>
+          <section id="experience">
             <Experience />
           </section>
-          <section>
+          <section id="skills">
             <Skills />
           </section>
-          <section>
+          <section id="projects">
             <Projects />
           </section>
         </div>

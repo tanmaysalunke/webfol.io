@@ -6,17 +6,17 @@ const Header: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <a className="btn-menu" href="#experience">
+            <a href="#experience" className="btn-menu">
               EXPERIENCE
             </a>
           </li>
           <li>
-            <a className="btn-menu" href="#skills">
+            <a href="#skills" className="btn-menu">
               SKILLS
             </a>
           </li>
           <li>
-            <a className="btn-menu" href="#projects">
+            <a href="#projects" className="btn-menu">
               PROJECTS
             </a>
           </li>
