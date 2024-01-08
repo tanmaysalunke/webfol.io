@@ -48,9 +48,6 @@ const App: React.FC = () => {
           a: {
             color: darkMode ? "#C5D1EC" : "#0F172A", // Use your theme link colors here
             textDecoration: "none", // Optional: remove underline from links
-            "&:hover": {
-              // textDecoration: "underline", // Optional: underline on hover
-            },
           },
           p: {
             color: darkMode ? "#C5D1EC" : "#0F172A",
@@ -59,6 +56,9 @@ const App: React.FC = () => {
             "&:after, &:before": {
               borderColor: "inherit",
             },
+          },
+          svg: {
+            fill: darkMode ? "#C5D1EC" : "#0F172A",
           },
         },
       },
