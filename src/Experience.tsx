@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
       company: "Jio Platforms Limited",
       duration: "JULY 2022 - JAN 2023",
       description:
-        "Led a six-member team in extensive testing activities, including bug analysis and various testing methods. Employed JIRA for effective project management, identifying 43 unique issues. Collaborated with the U.S.-based Quality Assurance team, enhancing knowledge transfer for new team members.",
+        "Led a six-member team in extensive testing activities, including bug analysis and various testing methods. Employed JIRA for effective project management, identifying 43 unique issues. Collaborated with the U.S. - based Quality Assurance team, enhancing knowledge transfer for new team members.",
       imageUrl: "url-to-project-2-image.jpg",
     },
     {

@@ -7,8 +7,8 @@ const Projects: React.FC = () => {
       title: "GR918 - Software for System Hardware Inventory",
       duration: "MARCH - AUGUST 2022",
       description:
-        "In the Smart India Hackathon,developed an award-winning solution for GR918 - a hybrid LAN and cloud-based inventory management system. Utilizing Python, Django, and Batch Scripting, designed a Django-based website with a robust UI and database models, and automated hardware data extraction using Batch Script and Python, orchestrated through Windows Task Scheduler and Linux/Ubuntu CronJob. Our innovative approach in evolving the project from LAN-based to a combined LAN and Cloud solution was pivotal in our victory in the intense 36-hour finale.",
-      stack: ["Python", "Django", "Batch Scripting", "SQLite"],
+        "In the Smart India Hackathon, developed an award-winning solution for GR918 - a hybrid LAN and cloud-based inventory management system. Utilizing Python, Django, and Batch Scripting, designed a Django-based website with a robust UI and database models, and automated hardware data extraction using Batch Script and Python, orchestrated through Windows Task Scheduler and Linux/Ubuntu CronJob. Our innovative approach in evolving the project from LAN-based to a combined LAN and Cloud solution was pivotal in our victory in the intense 36-hour finale.",
+      stack: ["Python", "Django", "Batch Scripting", "SQLite", "CronJob"],
       imageUrl: "url-to-project-1-image.jpg",
     },
     {
@@ -16,8 +16,8 @@ const Projects: React.FC = () => {
       title: "E-Waste Tracker",
       duration: "JANUARY - APRIL 2022",
       description:
-        "Led the creation of a dynamic Django-based web portal tailored for efficient electronic waste management and real-time tracking of electronic devices and components. This initiative involved thorough research into the e-waste strategies of laptop manufacturers, delving into aspects of supply chain management and government policies. I was responsible for developing the entire stack, which included backend logic using Python and Django, designing robust SQLite database models, and crafting a user-friendly frontend with HTML, CSS, and JavaScript. The primary focus was on maintaining data integrity and offering a seamless user experience, culminating in a vital tool for promoting environmental sustainability in the technology sector.",
-      stack: ["Python", "Django", "SQLite", "Git"],
+        "Spearheaded the development of a dynamic web portal designed for innovative electronic waste management and real-time tracking of electronic devices and components. This project emerged from in-depth research into the e-waste strategies of major laptop manufacturers, delving into the complexities of supply chain management and aligning with government policies. It involved creating a full-stack solution, emphasizing backend logic, robust database models, and a user-friendly interface. The portal stands out for its commitment to data integrity and seamless user experience, establishing itself as a key tool for promoting environmental sustainability in the technology sector.",
+      stack: ["Python", "Django", "SQLite", "HTML/CSS/JS", "Git"],
       imageUrl: "url-to-project-2-image.jpg",
     },
     {
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       description:
         "Crafted an Android application in Java, incorporating a Firebase database for data management. The app leverages the device's GPS sensor for acquiring real-time location data, enabling live tracking on OpenStreetMap via API integration.",
       stack: ["Android - Java", "Firebase", "XML", "OpenStreetMap API", "Git"],
-      imageUrl: "url-to-project-4-image.jpg",
+      imageUrl: "url-to-project-3-image.jpg",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       description:
         "Engineered a Flask app to enable college students to gauge their mental health through a strategic questionnaire, with MySQL integration for secure data handling and insightful analysis. This effort was bolstered by a partnership with college counselors, enhancing question validity and result interpretation to advance mental health awareness.",
       stack: ["Python", "Flask", "MySQL", "Git"],
-      imageUrl: "url-to-project-3-image.jpg",
+      imageUrl: "url-to-project-4-image.jpg",
     },
   ];
 
