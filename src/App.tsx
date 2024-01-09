@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -16,6 +16,54 @@ import Description from "./Description";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
+
+  const [activeSection, setActiveSection] = useState("");
+  const descriptionRef = useRef<HTMLElement>(null);
+  const experienceRef = useRef<HTMLElement>(null);
+  const skillsRef = useRef<HTMLElement>(null);
+  const projectsRef = useRef<HTMLElement>(null);
+
+  const layoutRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        { id: "description", ref: descriptionRef },
+        { id: "experience", ref: experienceRef },
+        { id: "skills", ref: skillsRef },
+        { id: "projects", ref: projectsRef },
+      ];
+      const layoutElement = layoutRef.current;
+      if (!layoutElement) return;
+
+      const currentSection = sections.find((section) => {
+        const element = section.ref.current;
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const isHalfShown =
+            rect.top < window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2;
+          return isHalfShown;
+        }
+        return false;
+      });
+
+      if (currentSection && currentSection.id !== activeSection) {
+        setActiveSection(currentSection.id);
+      }
+    };
+
+    const layoutElement = layoutRef.current;
+    if (layoutElement) {
+      layoutElement.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (layoutElement) {
+        layoutElement.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [activeSection]);
 
   const getDesignTokens = (mode: "light" | "dark") => ({
     palette: {
@@ -97,24 +145,24 @@ const App: React.FC = () => {
         {darkMode ? <BrightnessHighIcon /> : <NightsStayIcon />}
       </IconButton>
 
-      <div className="container-fluid layout">
+      <div className="container-fluid layout" ref={layoutRef}>
         <div className="col-6 sticky-lg-top sidebar">
           {/* Content for your fixed sidebar */}
           <About />
-          <Header />
+          <Header activeSection={activeSection} />
           <Contact />
         </div>
         <div className="col-6 main-content">
-          <section>
+          <section ref={descriptionRef}>
             <Description />
           </section>
-          <section id="experience">
+          <section id="experience" ref={experienceRef}>
             <Experience />
           </section>
-          <section id="skills">
+          <section id="skills" ref={skillsRef}>
             <Skills />
           </section>
-          <section id="projects">
+          <section id="projects" ref={projectsRef}>
             <Projects />
           </section>
         </div>
