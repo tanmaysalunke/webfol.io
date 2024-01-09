@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -121,8 +122,12 @@ const App: React.FC = () => {
               color: darkMode ? "#00132d" : "#C5D1EC",
               border: darkMode ? "1px solid #C5D1EC" : "1px solid #00132d",
               background: darkMode ? "#C5D1EC" : "#00132d",
-              transition: "0.3s all",
+              transition: "10.3s all",
             },
+          },
+          ".MuiSvgIcon-root": {
+            color: darkMode ? "#C5D1EC" : "#00132d",
+            transition: "1s all",
           },
         },
       },
@@ -146,7 +151,7 @@ const App: React.FC = () => {
       >
         {darkMode ? <BrightnessHighIcon /> : <NightsStayIcon />}
       </IconButton>
-
+      <SpeedInsights />
       <div className="container-fluid layout" ref={layoutRef}>
         <div className="col-6 sticky-lg-top sidebar">
           {/* Content for your fixed sidebar */}

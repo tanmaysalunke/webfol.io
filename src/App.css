@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color :#001523; */
+  background-color: linear-gradient(315deg, #00132d 75%, #001e45 100%)
 }
 
 @media (min-width: 1024px) {
