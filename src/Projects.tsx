@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     {
       id: 2,
       title: "E-Waste Tracker",
-      duration: "AUGUST - APRIL 2022",
+      duration: "JANUARY - APRIL 2022",
       description:
         "Led the creation of a dynamic Django-based web portal tailored for efficient electronic waste management and real-time tracking of electronic devices and components. This initiative involved thorough research into the e-waste strategies of laptop manufacturers, delving into aspects of supply chain management and government policies. I was responsible for developing the entire stack, which included backend logic using Python and Django, designing robust SQLite database models, and crafting a user-friendly frontend with HTML, CSS, and JavaScript. The primary focus was on maintaining data integrity and offering a seamless user experience, culminating in a vital tool for promoting environmental sustainability in the technology sector.",
       stack: ["Python", "Django", "SQLite", "Git"],
@@ -22,19 +22,21 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "Project 3",
-      duration: "JANUARY - MARCH 2023",
-      description: "Description for Project 3",
-      stack: ["Python", "Django"],
-      imageUrl: "url-to-project-3-image.jpg",
+      title: "Location Tracking System",
+      duration: "JANUARY - APRIL 2021",
+      description:
+        "Crafted an Android application in Java, incorporating a Firebase database for data management. The app leverages the device's GPS sensor for acquiring real-time location data, enabling live tracking on OpenStreetMap via API integration.",
+      stack: ["Android - Java", "Firebase", "XML", "OpenStreetMap API", "Git"],
+      imageUrl: "url-to-project-4-image.jpg",
     },
     {
       id: 4,
-      title: "Project 4",
-      duration: "JANUARY - MARCH 2023",
-      description: "Description for Project 4",
-      stack: ["Python", "Django"],
-      imageUrl: "url-to-project-4-image.jpg",
+      title: "Mental Health Test Web Application",
+      duration: "JANUARY - APRIL 2020",
+      description:
+        "Engineered a Flask app to enable college students to gauge their mental health through a strategic questionnaire, with MySQL integration for secure data handling and insightful analysis. This effort was bolstered by a partnership with college counselors, enhancing question validity and result interpretation to advance mental health awareness.",
+      stack: ["Python", "Flask", "MySQL", "Git"],
+      imageUrl: "url-to-project-3-image.jpg",
     },
   ];
 
