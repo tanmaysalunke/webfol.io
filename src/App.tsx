@@ -122,12 +122,12 @@ const App: React.FC = () => {
               color: darkMode ? "#00132d" : "#C5D1EC",
               border: darkMode ? "1px solid #C5D1EC" : "1px solid #00132d",
               background: darkMode ? "#C5D1EC" : "#00132d",
-              transition: "0.3s all",
+              transition: "all 0.3s",
             },
           },
           ".MuiSvgIcon-root": {
             color: darkMode ? "#C5D1EC" : "#00132d",
-            transition: "1s all",
+            transition: "all 0.3s",
           },
         },
       },
@@ -146,7 +146,7 @@ const App: React.FC = () => {
           position: "absolute",
           top: "10px",
           left: "10px",
-          transition: "1s all",
+          transition: "all 0.3s",
         }}
       >
         {darkMode ? <BrightnessHighIcon /> : <NightsStayIcon />}
