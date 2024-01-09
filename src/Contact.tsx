@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
           <EmailIcon role="img" aria-label="Email" />
         </a>
         <a
-          href="https://www.linkedin.com/in/tanmay-kishor-salunke-8552a216b/"
+          href="./Tanmay Kishor_Salunke_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
