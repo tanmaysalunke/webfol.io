@@ -39,6 +39,15 @@ body {
   #skills .skill-tags{
     padding: 1rem;
   }
+  .main-section{
+    opacity: 20%;
+  
+    &.active{
+      opacity: 100%;
+      transition: all 0.3s;
+      transition-timing-function: ease-in;
+    }
+  }
 
   
 }
@@ -285,4 +294,3 @@ header ul {
 .experience .skill-tags{
   padding: 0.25rem 0 0.25rem 0;
 }
-

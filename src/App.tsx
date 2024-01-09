@@ -163,13 +163,31 @@ const App: React.FC = () => {
           <section ref={descriptionRef}>
             <Description />
           </section>
-          <section id="experience" ref={experienceRef}>
+          <section
+            id="experience"
+            ref={experienceRef}
+            className={`main-section ${
+              activeSection === "experience" ? "active" : ""
+            }`}
+          >
             <Experience />
           </section>
-          <section id="skills" ref={skillsRef}>
+          <section
+            id="skills"
+            ref={skillsRef}
+            className={`main-section ${
+              activeSection === "skills" ? "active" : ""
+            }`}
+          >
             <Skills />
           </section>
-          <section id="projects" ref={projectsRef}>
+          <section
+            id="projects"
+            ref={projectsRef}
+            className={`main-section ${
+              activeSection === "projects" ? "active" : ""
+            }`}
+          >
             <Projects />
           </section>
         </div>
