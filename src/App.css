@@ -83,6 +83,33 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .exp{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 2rem 0!important;
+  }
+  .duration, .experience{
+    width: 100%;
+  }
+  
+  .duration p{
+    margin-bottom: 0.5rem;
+  }
+
+  section #description, #skills{
+    margin-bottom: 2rem;
+  }
+
+  .section-header{
+    padding-top: 0 !important;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
 /* Nav menu */
 .btn-menu {
   cursor: pointer;

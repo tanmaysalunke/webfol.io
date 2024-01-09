@@ -17,6 +17,7 @@ import Description from "./Description";
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
 
+  //Scroll Behavior
   const [activeSection, setActiveSection] = useState("");
   const descriptionRef = useRef<HTMLElement>(null);
   const experienceRef = useRef<HTMLElement>(null);
@@ -65,6 +66,7 @@ const App: React.FC = () => {
     };
   }, [activeSection]);
 
+  // Dark/Light Mode
   const getDesignTokens = (mode: "light" | "dark") => ({
     palette: {
       mode,
@@ -97,11 +99,11 @@ const App: React.FC = () => {
             transition: "background-color 1s, color 1s",
           },
           a: {
-            color: darkMode ? "#C5D1EC" : "#0F172A", // Use your theme link colors here
+            color: darkMode ? "#C5D1EC" : "#00132d", // Use your theme link colors here
             textDecoration: "none", // Optional: remove underline from links
           },
           p: {
-            color: darkMode ? "#C5D1EC" : "#0F172A",
+            color: darkMode ? "#C5D1EC" : "#00132d",
           },
           ".btn-menu": {
             "&:after, &:before": {
@@ -109,16 +111,16 @@ const App: React.FC = () => {
             },
           },
           svg: {
-            fill: darkMode ? "#C5D1EC" : "#0F172A",
+            fill: darkMode ? "#C5D1EC" : "#00132d",
           },
           ".skill-tag": {
-            color: darkMode ? "#C5D1EC" : "#0F172A",
-            border: darkMode ? "1px solid #C5D1EC" : "1px solid #0F172A",
+            color: darkMode ? "#C5D1EC" : "#00132d",
+            border: darkMode ? "1px solid #C5D1EC" : "1px solid #00132d",
 
             "&:hover": {
-              color: darkMode ? "#0F172A" : "#C5D1EC",
-              border: darkMode ? "1px solid #C5D1EC" : "1px solid #0F172A",
-              background: darkMode ? "#C5D1EC" : "#0F172A",
+              color: darkMode ? "#00132d" : "#C5D1EC",
+              border: darkMode ? "1px solid #C5D1EC" : "1px solid #00132d",
+              background: darkMode ? "#C5D1EC" : "#00132d",
               transition: "0.3s all",
             },
           },
