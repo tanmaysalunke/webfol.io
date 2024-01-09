@@ -122,7 +122,7 @@ const App: React.FC = () => {
               color: darkMode ? "#00132d" : "#C5D1EC",
               border: darkMode ? "1px solid #C5D1EC" : "1px solid #00132d",
               background: darkMode ? "#C5D1EC" : "#00132d",
-              transition: "10.3s all",
+              transition: "0.3s all",
             },
           },
           ".MuiSvgIcon-root": {
