@@ -5,11 +5,28 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important; 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: linear-gradient(315deg, #00132d 75%, #001e45 100%)
+}
+
+.fixed-background {
+  position: fixed; /* Fixed position so it doesn't scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Sit behind all other content */
+}
+
+.dark-background {
+  background: linear-gradient(315deg, #00132d 75%, #001e45 100%);
+}
+
+.light-background {
+  background: linear-gradient(315deg, #C5D1EC 75%, #e2e8f0 100%);
 }
 
 @media (min-width: 1024px) {
@@ -58,6 +75,13 @@ body {
       height: 100vh;
       width: 100vh;
     }
+  }
+
+  #about, #skills{
+    margin-bottom: 6rem !important;
+  }
+  #experience{
+    margin-bottom: 4rem !important;
   }
 }
 
@@ -111,8 +135,16 @@ body {
     &.active{
       display:contents;
       height: auto;
-    width: auto;
+      width: auto;
     }
+  }
+
+  #about, #experience, #skills{
+    margin-bottom: 2rem !important;
+  }
+
+  #skills .skill-tags {
+    padding: 0;
   }
 }
 
@@ -130,7 +162,7 @@ body {
     margin-bottom: 0.5rem;
   }
 
-  section #description, #skills{
+  section #description, #skills, #about{
     margin-bottom: 2rem;
   }
 
@@ -214,7 +246,7 @@ body {
   }
 }
 
-#about a {
+#header-content a {
   font-size: 3rem;
   font-weight: 700;
   text-decoration: none;

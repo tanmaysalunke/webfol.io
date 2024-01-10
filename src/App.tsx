@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh"; // Sun icon
 import NightsStayIcon from "@mui/icons-material/NightsStay"; // Moon icon
 import "./App.css";
+import Nav from "./Nav";
 import Header from "./Header";
 import About from "./About";
 import Skills from "./Skills";
@@ -21,6 +22,7 @@ const App: React.FC = () => {
   //Scroll Behavior
   const [activeSection, setActiveSection] = useState("");
   const descriptionRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
   const experienceRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
@@ -31,6 +33,7 @@ const App: React.FC = () => {
     const handleScroll = () => {
       const sections = [
         { id: "description", ref: descriptionRef },
+        { id: "about", ref: aboutRef },
         { id: "experience", ref: experienceRef },
         { id: "skills", ref: skillsRef },
         { id: "projects", ref: projectsRef },
@@ -96,7 +99,7 @@ const App: React.FC = () => {
           body: {
             background: darkMode
               ? "linear-gradient(315deg, #00132d 75%, #001e45 100%)"
-              : "#C5D1EC",
+              : "linear-gradient(315deg, #C5D1EC 75%, #e2e8f0 100%)",
             transition: "background-color 1s, color 1s",
           },
           a: {
@@ -140,6 +143,11 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <div
+        className={`fixed-background ${
+          darkMode ? "dark-background" : "light-background"
+        }`}
+      ></div>
       <IconButton
         onClick={toggleDarkTheme}
         style={{
@@ -155,13 +163,22 @@ const App: React.FC = () => {
       <div className="container-fluid layout" ref={layoutRef}>
         <div className="col-6 sticky-lg-top sidebar">
           {/* Content for your fixed sidebar */}
-          <About />
-          <Header activeSection={activeSection} />
+          <Header />
+          <Nav activeSection={activeSection} />
           <Contact />
         </div>
         <div className="col-6 main-content">
           <section ref={descriptionRef}>
             <Description darkMode={darkMode} />
+          </section>
+          <section
+            id="about"
+            ref={aboutRef}
+            className={`main-section ${
+              activeSection === "about" ? "active" : ""
+            }`}
+          >
+            <About />
           </section>
           <section
             id="experience"
