@@ -1,9 +1,10 @@
 import React from "react";
+import Lottie from "react-lottie-player";
 
 const Description = () => {
   return (
     <section id="description">
-      <p>
+      {/* <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         vulputate arcu risus, nec varius erat gravida aliquet. Vivamus viverra
         accumsan dolor nec euismod. Donec hendrerit et purus sed mollis. In
@@ -15,7 +16,13 @@ const Description = () => {
         auctor. Duis id mollis justo, in volutpat nulla. Phasellus eget est id
         sapien consequat suscipit vitae eu dolor. Nulla in odio euismod lectus
         aliquam porttitor vitae tempus ipsum. Etiam interdum eu ante ut sodales.
-      </p>
+      </p> */}
+      <Lottie
+        className="anime"
+        loop
+        animationData={require("./icons/lottie.json")}
+        play
+      />
     </section>
   );
 };
