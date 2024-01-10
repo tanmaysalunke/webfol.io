@@ -161,7 +161,7 @@ const App: React.FC = () => {
         </div>
         <div className="col-6 main-content">
           <section ref={descriptionRef}>
-            <Description />
+            <Description darkMode={darkMode} />
           </section>
           <section
             id="experience"

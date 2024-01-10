@@ -52,6 +52,12 @@ body {
   .anime{
     height: 100vh;
     width: 100vh;
+    display: none;
+    &.active{
+      display:contents;
+      height: 100vh;
+      width: 100vh;
+    }
   }
 }
 
@@ -99,8 +105,14 @@ body {
     align-items: center;
   }
   .anime{
+    display: none;
     height: auto;
     width: auto;
+    &.active{
+      display:contents;
+      height: auto;
+    width: auto;
+    }
   }
 }
 
@@ -132,6 +144,10 @@ body {
 
   .anime{
     display: none;
+
+    &.active{
+      display: none;
+    }
   }
 }
 
