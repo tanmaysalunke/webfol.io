@@ -9,16 +9,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: linear-gradient(315deg, #00132d 75%, #001e45 100%)
+  background-color: linear-gradient(315deg, #00132d 75%, #001e45 100%);
 }
 
 .fixed-background {
-  position: fixed; /* Fixed position so it doesn't scroll */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1; /* Sit behind all other content */
+  z-index: -1;
 }
 
 .dark-background {
@@ -27,6 +27,12 @@ body {
 
 .light-background {
   background: linear-gradient(315deg, #C5D1EC 75%, #e2e8f0 100%);
+  /* #E0F0FF */
+}
+
+p strong{
+  /* color: white; */
+  font-weight: 700;
 }
 
 @media (min-width: 1024px) {
@@ -246,17 +252,15 @@ body {
   }
 }
 
-#header-content a {
+#header-content h1 {
   font-size: 3rem;
   font-weight: 700;
   text-decoration: none;
-  /* color: white; */
+  line-height: inherit;
 }
 
 .subtitle {
-  /* color: #C5D1EC; */
   font-size: 1.5rem;
-  /* color: #fff; */
 }
 
 #experience {
