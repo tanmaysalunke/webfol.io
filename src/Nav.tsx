@@ -1,6 +1,25 @@
 import React from "react";
 
 const Nav: React.FC<{ activeSection: string }> = ({ activeSection }) => {
+  const scrollToSection = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    const layout = document.querySelector(".layout");
+    if (section && layout) {
+      const offsetTop = section.offsetTop;
+      const calculatedTop =
+        offsetTop - layout.clientHeight / 2 + section.offsetHeight / 2;
+      layout.scrollTo({
+        top: calculatedTop,
+        behavior: "smooth",
+      });
+      window.history.pushState({}, "", `#${sectionId}`);
+    }
+  };
+
   return (
     <header>
       <nav>
@@ -11,6 +30,7 @@ const Nav: React.FC<{ activeSection: string }> = ({ activeSection }) => {
               className={`btn-menu ${
                 activeSection === "about" ? "active" : ""
               }`}
+              onClick={(e) => scrollToSection(e, "about")}
             >
               ABOUT
             </a>
@@ -31,6 +51,7 @@ const Nav: React.FC<{ activeSection: string }> = ({ activeSection }) => {
               className={`btn-menu ${
                 activeSection === "skills" ? "active" : ""
               }`}
+              onClick={(e) => scrollToSection(e, "skills")}
             >
               SKILLS
             </a>
