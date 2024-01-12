@@ -163,7 +163,7 @@ const App: React.FC = () => {
       <div className="container-fluid layout" ref={layoutRef}>
         <div className="col-6 sticky-lg-top sidebar">
           {/* Content for your fixed sidebar */}
-          <Header />
+          <Header darkMode={darkMode} />
           <Nav activeSection={activeSection} />
           <Contact />
         </div>
