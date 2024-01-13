@@ -260,12 +260,12 @@ p strong{
 }
 
 .title-dark{
-  background: linear-gradient(to right, #C5D1EC 20%, #fff 40%, #fff 60%, #C5D1EC 80%);
+  background: linear-gradient(to right, #a1b9f0 20%, #fefefe 40%, #fefefe 60%, #a1b9f0 80%);
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; 
-  animation: shine 3s linear infinite;
+  animation: shine 4s linear infinite;
 }
 .title-light{
   background: linear-gradient(to right, #00132d 20%, #013275 40%, #013275 60%, #00132d 80%);
@@ -273,11 +273,11 @@ p strong{
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text; 
-  animation: shine 3s linear infinite;
+  animation: shine 4s linear infinite;
 }
 @keyframes shine {
   to {
-    background-position: 200% center;
+    background-position: -200% center;
   }
 }
 
@@ -385,3 +385,29 @@ header ul {
   padding: 0.25rem 0 0.25rem 0;
 }
 
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #C5D1EC;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000; /* Increased z-index */
+  bottom: 110%; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; /* Smooth transition */
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
