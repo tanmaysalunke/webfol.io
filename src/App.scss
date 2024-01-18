@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html {
   scroll-behavior: smooth;
@@ -10,6 +13,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: linear-gradient(315deg, #00132d 75%, #001e45 100%);
+}
+
+h2 {
+  font-size: calc(1.325rem + .9vw);
+  margin-bottom: 0.5rem;
 }
 
 .fixed-background {
@@ -27,31 +35,13 @@ body {
 
 .light-background {
   background: linear-gradient(315deg, #C5D1EC 75%, #e2e8f0 100%);
-  /* #E0F0FF */
 }
 
 p strong{
-  /* color: white; */
   font-weight: 700;
 }
 
 @media (min-width: 1024px) {
-  .layout {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 0 6rem 0 6rem;
-    scroll-behavior: smooth;
-  }
-
-  .sidebar {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   /* Landing part right side */
   #description{
   height:100vh;
@@ -96,8 +86,6 @@ p strong{
     display: flex;
     flex-direction: column;
     height: auto;
-    /* background-color: #0F172A; */
-    /* color: white; */
     padding: 3rem 0 0 0;
   }
 
@@ -228,20 +216,6 @@ p strong{
     }
   }
 }
-/* .btn-menu2 {
-  --c:linear-gradient(#000 0 0);
-  
-  padding-bottom: .15em;
-  background: var(--c), var(--c);
-  background-size: .3em .1em;
-  background-position:50% 100%;
-  background-repeat: no-repeat;
-  transition: .3s linear, background-size .3s .2s linear;
-}
-.btn-menu2:hover {
-  background-size: 40% .1em;
-  background-position: 10% 100%, 90% 100%;
-} */
 
 .section-header {
   text-transform: uppercase;
@@ -294,11 +268,6 @@ p strong{
 
   &:hover {
     transition: all 0.3s;
-    /* background: rgba(30, 41, 59, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px); */
   }
 }
 
@@ -333,17 +302,12 @@ p strong{
 
 header a {
   text-decoration: none;
-  /* color: #fff; */
   font-weight: 700;
 }
 
 header li {
   padding-bottom: 20px;
 }
-
-/* header a:active, a:hover, a:focus{
-  color: #C5D1EC;
-} */
 
 header ul {
   margin-top: 4rem;
@@ -360,7 +324,6 @@ header ul {
 }
 
 .contact-icons a {
-  /* filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(112deg) brightness(102%) contrast(101%); Change SVG Color */
   margin-right: 1.15rem;
   &:hover {
     scale: 1.25;

@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import IconButton from "@mui/material/IconButton";
 import BrightnessHighIcon from "@mui/icons-material/BrightnessHigh"; // Sun icon
 import NightsStayIcon from "@mui/icons-material/NightsStay"; // Moon icon
-import "./App.css";
+import "./App.scss";
 import Nav from "./Nav";
 import Header from "./Header";
 import About from "./About";
@@ -104,14 +104,14 @@ const App: React.FC = () => {
           },
           a: {
             color: darkMode ? "#C5D1EC" : "#00132d", // Use your theme link colors here
-            textDecoration: "none", // Optional: remove underline from links
+            textDecoration: "none", // remove underline from links
           },
           p: {
             color: darkMode ? "#C5D1EC" : "#00132d",
           },
           ".btn-menu": {
             "&:after, &:before": {
-              borderColor: "inherit",
+              borderColor: darkMode ? "#C5D1EC" : "#00132d",
             },
           },
           svg: {
@@ -160,14 +160,16 @@ const App: React.FC = () => {
         {darkMode ? <BrightnessHighIcon /> : <NightsStayIcon />}
       </IconButton>
       <SpeedInsights />
-      <div className="container-fluid layout" ref={layoutRef}>
-        <div className="col-6 sticky-lg-top sidebar">
-          {/* Content for your fixed sidebar */}
+      <div
+        className="container-fluid layout flex w-full px-24 h-screen overflow-y-auto scroll-smooth"
+        ref={layoutRef}
+      >
+        <div className="w-1/2 sticky-lg-top sidebar flex flex-column justify-center h-full">
           <Header darkMode={darkMode} />
           <Nav activeSection={activeSection} />
           <Contact />
         </div>
-        <div className="col-6 main-content">
+        <div className="w-1/2 main-content">
           <section ref={descriptionRef}>
             <Description darkMode={darkMode} />
           </section>
