@@ -4,6 +4,24 @@ const Projects: React.FC = () => {
   const projList = [
     {
       id: 1,
+      title: "Course Swap Application",
+      duration: "MAY - JULY 2024",
+      description:
+        "Developed a course swap web application using Node.js and React, enabling university students to efficiently exchange course enrollments and simplify the registration process through Google OAuth integration. Implemented sophisticated matching algorithms to automate user matching based on detailed course preferences, thereby increasing user satisfaction and engagement. Integrated secure RESTful APIs and leveraged MongoDB for robust data management, ensuring scalable application performance with reliable data storage solutions. Utilized Docker to containerize the frontend and backend components, ensuring isolated environments for development and deployment.",
+      stack: [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "GitHub Actions",
+        "Amazon EC2",
+        "MongoDB",
+        "Socket.io",
+        "Puppeteer",
+      ],
+      imageUrl: "url-to-project-1-image.jpg",
+    },
+    {
+      id: 2,
       title: "GR918 - Software for System Hardware Inventory",
       duration: "MARCH - AUGUST 2022",
       description:
@@ -12,7 +30,7 @@ const Projects: React.FC = () => {
       imageUrl: "url-to-project-1-image.jpg",
     },
     {
-      id: 2,
+      id: 3,
       title: "E-Waste Tracker",
       duration: "JANUARY - APRIL 2022",
       description:
@@ -21,7 +39,7 @@ const Projects: React.FC = () => {
       imageUrl: "url-to-project-2-image.jpg",
     },
     {
-      id: 3,
+      id: 4,
       title: "Location Tracking System",
       duration: "JANUARY - APRIL 2021",
       description:
@@ -30,7 +48,7 @@ const Projects: React.FC = () => {
       imageUrl: "url-to-project-3-image.jpg",
     },
     {
-      id: 4,
+      id: 5,
       title: "Mental Health Test Web Application",
       duration: "JANUARY - APRIL 2020",
       description:

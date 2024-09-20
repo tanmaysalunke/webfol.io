@@ -4,25 +4,34 @@ const Experience: React.FC = () => {
   const expList = [
     {
       id: 1,
-      title: "Software Developer",
-      company: "Jio Platforms Limited",
-      duration: "JAN 2023 - JULY 2023",
+      title: "Teaching Assistant - CSE 110",
+      company: "Arizona State University",
+      duration: "AUGUST 2024 - PRESENT",
       description:
-        "Awarded the 'Spotlight Award' for versatile front and back-end development, crucial to team success. Streamlined vehicle check-ins at Reliance Corporate Park, Navi Mumbai, reducing wait times by 15 minutes through UI design and API development. Enhanced system efficiency by 30% with Mendix microflows and CSS optimizations.",
-      stack: ["Python", "Django"],
-      imageUrl: "url-to-project-1-image.jpg",
-    },
-    {
-      id: 2,
-      title: "Tester (Team Lead)",
-      company: "Jio Platforms Limited",
-      duration: "JULY 2022 - JAN 2023",
-      description:
-        "Led a six-member team in extensive testing activities, including bug analysis and various testing methods. Employed JIRA for effective project management, identifying 43 unique issues. Collaborated with the U.S. - based Quality Assurance team, enhancing knowledge transfer for new team members.",
+        "I led three lab sessions each week, providing hands-on instruction in Java programming concepts, debugging techniques, and code optimization. I supported students through study hall sessions by addressing their queries, offering tutoring, and resolving grading issues, ensuring their understanding of core programming principles. Additionally, I assisted faculty by proctoring exams, managing grading concerns, and offering extra instructional support to enhance the overall learning experience.",
       imageUrl: "url-to-project-2-image.jpg",
     },
     {
       id: 2,
+      title: "Web Developer",
+      company: "Arizona State University",
+      duration: "MAY - AUGUST 2024",
+      description:
+        "I developed and launched the HyPT Center’s website, effectively presenting critical information such as member profiles, events, and news, which improved communication and resource sharing among international stakeholders. By replicating the Doodle poll functionality on the website, I facilitated global collaboration by ensuring synchronized meeting times and enhancing participation across diverse time zones. Additionally, I enhanced user engagement by implementing a registration feature that sends automated Zoom links and calendar invites to participants who RSVP, leading to a 25% increase in event attendance.",
+      imageUrl: "url-to-project-2-image.jpg",
+    },
+    {
+      id: 3,
+      title: "Software Developer",
+      company: "Jio Platforms Limited",
+      duration: "JAN 2023 - JULY 2023",
+      description:
+        "I enhanced system efficiency by 30% over the legacy Visitor Management Enterprise System by optimizing process flows, developing microflows and workflows, and integrating Continuous Integration/Continuous Deployment (CI/CD) pipelines. By integrating strategic vehicle check-in processes and automating data retrieval through Single Sign-On (SSO) and JSON-formatted SAP API integrations within a React framework, I reduced visitor check-in times by 15 minutes. Additionally, I improved user error rectification by 50% by leading a modular UI redesign in the Enterprise System; the redesign, implemented using iterative processes in Figma and React, significantly boosted user satisfaction and system usability.",
+      stack: ["Python", "Django"],
+      imageUrl: "url-to-project-1-image.jpg",
+    },
+    {
+      id: 4,
       title: "Web Development Intern",
       company: "Mumbai University",
       duration: "JUNE - JULY 2020",
