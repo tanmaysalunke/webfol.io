@@ -4,6 +4,26 @@ const Projects: React.FC = () => {
   const projList = [
     {
       id: 1,
+      title: "OptiCloud",
+      duration: "OCTOBER - OCTOBER 2024",
+      description:
+        "The OptiCloud project is a cloud resource optimization platform designed to enhance the efficiency of AWS EC2 instances by analyzing and optimizing cloud metrics. Built using Next.js, Django, and Python Boto3 (AWS SDK), the platform leverages large language models (LLMs) to extract and analyze data from AWS CloudWatch. This analysis generates precise recommendations to improve resource allocation and usage. Additionally, the project automates the provisioning of AWS resources through CloudFormation and Boto3, streamlining the setup of dynamic monitoring using YAML scripts. By automating these processes, OptiCloud helps organizations efficiently monitor and optimize their cloud infrastructure, leading to reduced costs and improved performance.",
+      stack: [
+        "Next.js",
+        "Django",
+        "Python Boto3 (AWS SDK)",
+        "AWS EC2",
+        "AWS S3",
+        "AWS CloudWatch",
+        "AWS CloudFormation",
+        "OpenAI API",
+        "YAML",
+        "Chart.js",
+      ],
+      imageUrl: "url-to-project-1-image.jpg",
+    },
+    {
+      id: 1,
       title: "Course Swap Application",
       duration: "MAY - JULY 2024",
       description:
